@@ -1,0 +1,14 @@
+@i_CityId Bigint,
+	@i_CompId bigint
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	Declare @l_StateID bigint;
+	Declare @l_CountryId bigint;
+			
+	set @l_StateID=(SELECT StateID from Gen_City where Gen_City.CityID=@i_CityId and Gen_City.companyid=@i_CompId)
+
+	set @l_CountryId=(SELECT CountryID from Gen_State where Gen_State.StateID=@l_StateID)
+
+	select * from Gen_Area where Gen_Area.CityID=@i_CityId

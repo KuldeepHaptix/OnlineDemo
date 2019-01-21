@@ -1,0 +1,94 @@
+ XMLString = XMLString + "<Table>";
+                XMLString = XMLString + "<ItemId>" + dtqitem.Rows[i]["ItemID"].ToString() + "</ItemId>";
+                XMLString = XMLString + "<CurrencyID>1</CurrencyID>";
+                XMLString = XMLString + "<GodownID>" + "1" + "</GodownID>";
+                XMLString = XMLString + "<ItemDesc>" + dtqitem.Rows[i]["Specification"].ToString() + "</ItemDesc>";
+              //  XMLString = XMLString + "<Name>" + dtqitem.Rows[i]["Name"].ToString() + "</Name>";
+
+                XMLString = XMLString + "<Qty>" + Convert.ToDecimal(dtqitem.Rows[i]["Qnty"]).ToString() + "</Qty>";
+                XMLString = XMLString + "<Rate>" + Convert.ToDecimal(dtqitem.Rows[i]["Price"]).ToString() + "</Rate>";
+                XMLString = XMLString + "<UOM>" +Convert.ToInt32(dtqitem.Rows[i]["UOM"]).ToString() + "</UOM>";
+                XMLString = XMLString + "<Amount>" + Convert.ToDecimal(dtqitem.Rows[i]["Amount"]).ToString() + "</Amount>";
+                XMLString = XMLString + "<TaxClassID>" + "1" + "</TaxClassID>";
+
+                XMLString = XMLString + "<SGSTRate>" + Convert.ToDecimal(dtqitem.Rows[i]["sgst"]).ToString() + "</SGSTRate>";
+                XMLString = XMLString + "<CGSTRate>" + Convert.ToDecimal(dtqitem.Rows[i]["cgst"]).ToString() + "</CGSTRate>";
+                XMLString = XMLString + "<IGSTRate>" + Convert.ToDecimal(dtqitem.Rows[i]["igst"]).ToString() + "</IGSTRate>";
+                XMLString = XMLString + "<NetAmount>" + Convert.ToDecimal(dtqitem.Rows[i]["NetAmount"]).ToString()  + "</NetAmount>";
+
+                XMLString = XMLString + "<Discount>" + Convert.ToDecimal(dtqitem.Rows[i]["Discount"]).ToString() + "</Discount>";
+            
+                XMLString = XMLString + "</Table> ";
+
+
+
+
+
+
+
+//--------------------------Data table
+
+
+ //DataColumn dtid = new DataColumn("ItemID", typeof(System.Int32));
+            //dtqitem.Columns.Add(dtid);
+
+            //DataColumn dtname = new DataColumn("Name", typeof(System.String));
+            //dtqitem.Columns.Add(dtname);
+
+            //DataColumn dtQnt = new DataColumn("Qnty", typeof(System.Decimal));
+            //dtqitem.Columns.Add(dtQnt);
+
+            //DataColumn dtuom = new DataColumn("UOM", typeof(System.Int32));
+            //dtqitem.Columns.Add(dtuom);
+
+            //DataColumn dtprice = new DataColumn("Price", typeof(System.Decimal));
+            //dtqitem.Columns.Add(dtprice);
+
+            //DataColumn dtcurrency = new DataColumn("Currency", typeof(System.Int32));
+            //dtqitem.Columns.Add(dtcurrency);
+
+
+            //DataColumn dtDiscount = new DataColumn("Discount", typeof(System.Decimal));
+            //dtqitem.Columns.Add(dtDiscount);
+
+            //DataColumn dtNetAmount = new DataColumn("NetAmount", typeof(System.Decimal));
+            //dtqitem.Columns.Add(dtNetAmount);
+
+            //DataColumn dtTaxClass = new DataColumn("TaxClass", typeof(System.Int32));
+            //dtqitem.Columns.Add(dtTaxClass);
+
+            //DataColumn dtsgst = new DataColumn("sgst", typeof(System.Decimal));
+            //dtqitem.Columns.Add(dtsgst);
+
+            //DataColumn dtcgst = new DataColumn("cgst", typeof(System.Decimal));
+            //dtqitem.Columns.Add(dtcgst);
+
+            //DataColumn dtigst = new DataColumn("igst", typeof(System.Decimal));
+            //dtqitem.Columns.Add(dtigst);
+
+
+            //DataColumn dtSpecification = new DataColumn("Specification", typeof(System.String));
+            //dtqitem.Columns.Add(dtSpecification);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

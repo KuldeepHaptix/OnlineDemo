@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterOne.master.cs" Inherits="MasterOne" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+
+    <!-- Bootstrap -->
+    <link href="js/DataTables/datatables.min.css" rel="stylesheet" />
+    <link href="~/CSS/bootstrap-4.0.0.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    
+    <div class="col-sm-12 text-center">Saleskit CRM</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="../HomeTesting.aspx">Dashboard<span class="sr-only">(current)</span></a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Master
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <%-- <a class="dropdown-item" href="../AllMaster/CompanyRegister.aspx">CompanyRegister</a>--%>
+               <%--    <a class="dropdown-item" href="../AllMaster/TestingofMaster.aspx">testing</a>
+                <a class="dropdown-item" href="../formviewTesing.aspx">testing master</a>
+                  <a class="dropdown-item" href="../AllMaster/EmployeeDetail.aspx">Employee Detail</a>--%>
+         <%-- <a class="dropdown-item" href="../EditableDropdownTesting.aspx">Editable Dropdown</a>--%>
+
+                 
+                   <a class="dropdown-item" href="../AllMaster/locationMasterNew.aspx">Location</a>
+                      <a class="dropdown-item" href="../AllMaster/TerritoryManagment.aspx">Territory  Managment</a>
+					<a class="dropdown-item" href="../AllMaster/EmployeeList.aspx">Employee</a>
+                   <%-- <a class="dropdown-item" href="../AllMaster/GodowMaster.aspx">Godown</a>--%>
+                    <a class="dropdown-item" href="../AllMaster/ItemTerritoty.aspx">Item Teritory</a>
+					<a class="dropdown-item" href="../AllMaster/UOMmaster.aspx">UOM</a>
+					<a class="dropdown-item" href="../AllMaster/CurrencyMaster.aspx">Currency</a>
+					<a class="dropdown-item" href="../AllMaster/ItemList.aspx">Item Register</a>
+					<a class="dropdown-item" href="../AllMaster/TaxClass.aspx">Tax Class</a>
+					<a class="dropdown-item" href="../AllMaster/TypeOfServiceCall.aspx">Type of Service Call</a>
+					<a class="dropdown-item" href="../AllMaster/TermsAndCondition.aspx">Company Tearms & Conditions</a>
+					<a class="dropdown-item" href="../AllMaster/EmailFormate.aspx">Email Templates</a>
+                  <a class="dropdown-item" href="../AllMaster/EmailConfiguration.aspx">Email Configuration</a>
+                       <!--<a class="dropdown-item" href="../CustomerPayment/CustomerPaymentList.aspx">Custmer Payment</a>-->
+                  
+
+                   <!--<div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Something else here</a>-->
+                </div>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Marketing
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="../Inquiry/InquiryList.aspx">Inquiry management</a>
+                   <a class="dropdown-item" href="../Quotation/QuotationList.aspx">Quotation Management</a>
+					
+                   <!--<div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Something else here</a>-->
+                </div>
+             </li>
+             <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sales
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="../OrderBooking/OrderBookingList.aspx">Order Booking</a>
+                   <a class="dropdown-item" href="../CustomerPayment/CustomerPaymentList.aspx">Customer Payment</a>
+					<a class="dropdown-item" href="../CustomerFollowup/CustomerFollowupList.aspx">Customer Followup</a>
+					
+                   <!--<div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Something else here</a>-->
+                </div>
+             </li>
+			  <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Service
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="../Service/ServiceNew.aspx">Service Form</a>
+                    <a class="dropdown-item" href="../ServiceBox/ServiceReq.aspx">Service Box</a>
+					
+                   <!--<div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Something else here</a>-->
+                </div>
+             </li>
+            
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Reminder
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="../Inquiry/InquiryFollowupList.aspx">Inquiry Followup</a>
+                   <a class="dropdown-item" href="../Quotation/QuotationFollowupList.aspx">Quotatin/AMC/Service Followup</a>
+					<a class="dropdown-item" href="../CustomerPayment/CustomerPandingPaymentList.aspx">Customer Pending Payment</a>
+					
+                   <!--<div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Something else here</a>-->
+                </div>
+             </li>
+			  <li class="nav-item">
+                <a class="nav-link" href="#">Reports</a>
+             </li>
+
+              <li class="nav-item dropdown" style="margin-left:120px;">
+                  <form  id="Searchform" class="form-inline">
+                      <input class="form-control mr-sm-2" style="border-radius:5px; " type="text" placeholder="Search" />
+                     <a href="../Search/Search.aspx"><span style="color:white; font-size:22px;" class="fa fa-search"></span></a>
+                      <%--<button class="btn btn-light" type="submit">Search</button>--%>
+                  </form>
+              </li>
+               
+          </ul>
+          <!--Here Manage Account-->
+       </div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown8" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span style="font-size:25px;" class="fa fa-tasks"></span>
+                </a>
+                <div class="dropdown-menu" style="margin-left:-100px;width:100px;" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#"><p>Task1</p></a>
+                   <a class="dropdown-item" href="#">Task2</a>
+                   <a class="dropdown-item" href="#">See All ></a>
+					
+                   <!--<div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Something else here</a>-->
+                </div>
+             </li>
+        </ul>
+         <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown-menu-right">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span style="font-size:25px;" class="fa fa-bell"></span>
+                </a>
+                <div class="dropdown-menu" style="margin-left:-100px;" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#"><p>Notification1</p></a>
+                   <a class="dropdown-item" href="#">Reminder notification</a>
+                   <a class="dropdown-item" href="#">See All ></a>
+					
+                   <!--<div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Something else here</a>-->
+                </div>
+             </li>
+        </ul>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span style="font-size:25px;" class="fa fa-user-circle-o"></span>
+                </a>
+                <div class="dropdown-menu" style="margin-left:-100px;" aria-labelledby="navbarDropdown">
+                   <a class="dropdown-item" href="#">Upgrade Account</a>
+                       <a class="dropdown-item" href="../UpgradeAccount/ChangePwd.aspx">Change Password</a>
+                   <a class="dropdown-item" href="/Login.aspx">Logout</a>
+					
+                   <!--<div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Something else here</a>-->
+                </div>
+             </li>
+        </ul>
+
+        
+    </nav>
+
+    
+   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+   </asp:ContentPlaceHolder>
+    <br />
+    <div class="container">
+        <br/>
+
+        <hr/>
+        <div class="row">
+            <div class="text-center col-lg-6 offset-lg-3">
+                <h4>Footer </h4>
+                <p>Copyright &copy; 2015 &middot; All Rights Reserved &middot; <a href="#">My Website</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/DataTables/datatables.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+</body>
+</html>

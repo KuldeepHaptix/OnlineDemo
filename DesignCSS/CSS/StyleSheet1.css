@@ -1,0 +1,213 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #1abc9c;
+}
+
+/* Style the navigation bar links */
+.navbar {
+    overflow: hidden;
+    background-color: #1ABC9C;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:#6F6A6A ;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #1ABC9C;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar a.right {
+    float: right;
+}
+/* Change color on hover */
+
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: #E6E2E2;
+    padding: 20px;
+    display: block;
+}
+
+/* Fake image, just for this example */
+.blocksection-l {
+    background-color: #F9F5F6;
+    width: 48%;
+    padding: 10px;
+    float: left;
+    height:400px;
+    margin-left:10px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px 2px #CFCCCC;    
+}
+
+.blocksection-l image{
+    height:100%;
+    width:100%;
+
+}
+
+.blocksection-r {
+    background-color: #F9F5F6;
+    width: 48%;
+    padding: 10px;
+    float:right;
+    height:400px;
+    margin-right:10px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 4px 2px #CFCCCC;
+    
+}
+
+/* Footer */
+.footer {
+    padding: 10px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+/*displaying four cards in dashboard*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 23%;
+	display: inline-block;
+	padding: 2px;
+	margin: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container1 {
+    padding: 2px 16px;
+	background: #749BE0
+}
+.container2 {
+	padding: 2px 16px;
+	background: #8E58D9
+}
+.container3 {
+	padding: 2px 16px;
+	background: #77B834
+}
+.container4 {
+	padding: 2px 16px;
+	background: #D4953B
+}
+
+/*end*/
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
